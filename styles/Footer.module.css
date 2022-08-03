@@ -8,8 +8,11 @@
 }
 
 .footer p {
+  font: inherit;
   color: gray;
   margin: 0;
+  font-weight: bold;
+  font-size: small;
 }
 
 .footer a,
