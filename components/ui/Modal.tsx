@@ -1,3 +1,4 @@
+import { MutableRefObject, useEffect, useRef, useState } from "react";
 import ReactDOM from "react-dom";
 import { IoMdClose } from "react-icons/io";
 
@@ -23,27 +24,37 @@ const ModalOverlay: React.FC<{
   );
 };
 
-// const portalElement = document.getElementById("overlays");
-
 const Modal: React.FC<{
   content: React.ReactNode;
   onClose: () => void;
   title: string;
 }> = (props) => {
+  const ref = useRef<HTMLElement | null>();
+  const [mounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    ref.current = document.getElementById("overlays");
+    setIsMounted(true);
+  }, []);
+
   return (
     <>
-      {/* {ReactDOM.createPortal(
-        <Backdrop onClick={props.onClose} />,
-        portalElement!
-      )}
-      {ReactDOM.createPortal(
-        <ModalOverlay
-          content={props.content}
-          title={props.title}
-          onClose={props.onClose}
-        />,
-        portalElement!
-      )} */}
+      {mounted && ref.current
+        ? ReactDOM.createPortal(
+            <Backdrop onClick={props.onClose} />,
+            ref.current
+          )
+        : null}
+      {mounted && ref.current
+        ? ReactDOM.createPortal(
+            <ModalOverlay
+              content={props.content}
+              title={props.title}
+              onClose={props.onClose}
+            />,
+            ref.current
+          )
+        : null}
     </>
   );
 };
