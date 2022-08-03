@@ -1,26 +1,29 @@
-html,
+:root {
+  --light-red: #fff9f9;
+  --main-red: #e76f51;
+  --short-blue: #f4a261;
+  --long-green: #2a9d8f;
+  --timer-change-dur: 500ms;
+  --red-box-shadow: 0 2px 8px #f36969a9;
+  --blue-box-shadow: 0 2px 8px #f4a361b2;
+  --green-box-shadow: 0 2px 8px #2a9d90ab;
+  --black-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
 body {
-  padding: 0;
+  background-color: var(--light-red);
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }

@@ -1,0 +1,20 @@
+.timerTypeBtn {
+  border: none;
+  background-color: transparent;
+  color: var(--light-red);
+  font-size: 14px;
+}
+
+.selected {
+  background-color: var(--light-red);
+  color: var(--main-red);
+  transition-duration: var(--timer-change-dur);
+}
+
+.shortBreak {
+  color: var(--short-blue);
+}
+
+.longBreak {
+  color: var(--long-green);
+}

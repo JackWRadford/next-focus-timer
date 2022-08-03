@@ -1,0 +1,23 @@
+.footer {
+  font: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.footer p {
+  color: gray;
+  margin: 0;
+}
+
+.footer a,
+.footer a:visited {
+  font: inherit;
+  color: gray;
+}
+
+.footer a:hover {
+  color: var(--main-red);
+}

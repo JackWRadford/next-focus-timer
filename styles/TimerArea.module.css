@@ -1,0 +1,40 @@
+.wrapper {
+  margin: 0rem 1rem;
+}
+
+.timerArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--main-red);
+  margin: 3rem auto;
+  max-width: 30rem;
+  border-radius: 12px;
+  box-shadow: var(--red-box-shadow);
+  padding: 1rem;
+}
+
+.timerAreaActive {
+  box-shadow: none;
+}
+
+.shortBreak {
+  background-color: var(--short-blue);
+  box-shadow: var(--blue-box-shadow);
+}
+
+.longBreak {
+  background-color: var(--long-green);
+  box-shadow: var(--green-box-shadow);
+}
+
+.timer {
+  text-align: center;
+  font: inherit;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 72px;
+  padding: 4rem 0rem;
+  margin: 0 auto;
+  color: var(--light-red);
+}

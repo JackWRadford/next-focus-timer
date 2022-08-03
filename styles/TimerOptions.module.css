@@ -1,0 +1,29 @@
+.timerOptions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+}
+
+.timerOptionsBtn {
+  border: none;
+  background-color: transparent;
+  color: var(--light-red);
+  font-size: 14px;
+}
+
+.startBtn {
+  border: none;
+  width: 9rem;
+  height: 3rem;
+  font-size: 20px;
+  transition-duration: var(--timer-change-dur);
+}
+
+.shortBreak {
+  color: var(--short-blue);
+}
+
+.longBreak {
+  color: var(--long-green);
+}

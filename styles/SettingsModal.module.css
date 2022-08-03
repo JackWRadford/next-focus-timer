@@ -1,0 +1,16 @@
+.times {
+  display: flex;
+  justify-content: space-between;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.doneBtn {
+  background-color: var(--main-red);
+  border: none;
+  color: var(--light-red);
+}

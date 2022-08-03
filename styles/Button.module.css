@@ -1,0 +1,23 @@
+.button {
+  cursor: pointer;
+  font: inherit;
+  font-weight: bold;
+  height: 2rem;
+  padding: 0rem 0.5rem;
+  background-color: white;
+  color: var(--main-red);
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  transition-duration: 300ms;
+}
+
+/* Only if browser supports non-emulated hovering (mouse) */
+@media (hover: hover) {
+  .button:hover {
+    box-shadow: var(--black-box-shadow);
+  }
+}
+
+.button:active {
+  box-shadow: none;
+}
