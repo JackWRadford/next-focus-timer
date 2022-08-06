@@ -1,0 +1,14 @@
+.infoSection h1 {
+  margin: 0;
+  font-family: inherit;
+  font-size: larger;
+  color: var(--main-red);
+}
+
+.infoSection p {
+  margin: 0;
+  font-weight: 500;
+  font-size: small;
+  font-family: inherit;
+  color: gray;
+}

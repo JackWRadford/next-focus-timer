@@ -14,9 +14,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="theme-color" content="var(--light-red)" />
         <meta
           name="description"
-          content="Study timer to help you focus. Based on the Pomodoro Technique!"
+          content="Study timer to help you focus. Utilise the Pomodoro Technique to improve the quality and duration of your study sessions!"
         />
-        <title>Study Timer</title>
+        <title>Study Timer | Pomodoro Technique</title>
       </Head>
       <Provider store={store}>
         <Component {...pageProps} />

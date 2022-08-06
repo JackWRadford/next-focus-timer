@@ -1,0 +1,15 @@
+.wrapper {
+  margin: 6rem 1rem 2rem 1rem;
+}
+
+.infoArea {
+  display: flex;
+  flex-direction: column;
+  max-width: 30rem;
+  border: 1px solid lightgray;
+  border-radius: 12px;
+  padding: 1rem;
+  margin: auto;
+  margin-top: 1rem;
+  background-color: white;
+}

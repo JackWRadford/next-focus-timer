@@ -2,6 +2,9 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
+import { VerticalMedium } from "../components/helper/SpacingHelper";
+import InfoArea from "../components/infoArea/InfoArea";
+import InfoSection from "../components/infoArea/InfoSection";
 import TimerArea from "../components/timerSection/TimerArea";
 import { RootState } from "../store/store";
 import { setSettingsFromLocal } from "../store/timerSlice";
@@ -44,7 +47,13 @@ const HomePage = () => {
     <>
       <Header />
       <TimerArea />
-      {isPaused && <Footer />}
+      {isPaused && (
+        <>
+          <InfoArea />
+          <VerticalMedium />
+          <Footer />
+        </>
+      )}
     </>
   );
 };

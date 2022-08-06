@@ -8,7 +8,7 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
-      <h1>{isPaused ? "Study Timer" : " "}</h1>
+      <h1>{isPaused ? "Pomodoro Timer" : " "}</h1>
       <span>{isPaused && <SettingsBtn />}</span>
     </header>
   );
